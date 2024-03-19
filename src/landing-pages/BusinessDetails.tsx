@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../Button';
 import { FormattedMessage } from "react-intl";
 import Header from '../Header';
+import { Link } from 'react-router-dom';
 
 type BusinessDetailsProps = {
     title: any;
@@ -13,9 +14,10 @@ type BusinessDetailsProps = {
           <Header title={""} />
 
         <div className="flex justify-center py-12 bg-[#111111A1]">
-                    <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-2xl">
-                        <h1 className="text-2xl font-semibold mb-6">Business Details</h1>
+                    <div className="bg-white p-8  shadow-md w-full max-w-2xl">
+                        <h1 className="text-2xl font-semibold mb-4">Business Details</h1>
                         <div className="grid grid-cols-2 gap-4">
+                        
                         <div className='space-y-2'>
                         <span className='text-sm font-semibold mb-4'>Registered Business Name</span>
                         <input
@@ -97,8 +99,9 @@ type BusinessDetailsProps = {
                                 placeholder="IBAN Number"
                             />
                             </div>
+                            <div></div>
                             <div className='row-end'>
-                                <Button title={<FormattedMessage id="app.process"/>}/>
+                                <Link to='/DashboardFull'><Button title={<FormattedMessage id="app.process"/>}/></Link>
                             </div>
                         </div>
                         

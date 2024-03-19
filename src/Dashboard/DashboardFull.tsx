@@ -167,7 +167,7 @@ type DashboardFullProps = {
                       </div>
                       <div className="col-span-1 space-y-6">
                         <div className=" border bg-card text-card-foreground shadow-sm p-4" data-v0-t="card">
-                          <div className='flex flex-row space-x-6 content-center ml-8'>
+                          <div className='flex flex-row gap-6 content-center mx-8'>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -190,7 +190,7 @@ type DashboardFullProps = {
                           </div>
                         </div>
                         <div className=" border bg-card text-card-foreground shadow-sm p-4" data-v0-t="card">
-                          <div className='flex flex-row space-x-6 content-center ml-8'>
+                          <div className='flex flex-row gap-6 content-center mx-8'>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -213,7 +213,8 @@ type DashboardFullProps = {
                           </div>
                         </div>
                         <div className=" border bg-card text-card-foreground shadow-sm p-4" data-v0-t="card">
-                          <div className='flex flex-row space-x-6 content-center ml-8'>
+                          
+                            <div className='flex flex-row gap-6  content-center mx-8'>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -233,7 +234,8 @@ type DashboardFullProps = {
                               <p className='font-bold'>SAR 13,450</p>
                               <p className='text-sm font-semibold'>Transiction Balance</p>
                             </div>
-                          </div>
+                            </div>
+                          
                         </div>
                       </div>
                     </div>
@@ -257,7 +259,7 @@ type DashboardFullProps = {
                           </tr>
                         </thead>
                         <tbody>
-                          <tr className="border-b">
+                          <tr className="border-b text-left">
                             <td className="py-4">#96459761</td>
                             <td className="py-4 text-[#FA8232] font-semibold ">IN PROCESS</td>
                             <td className="py-4">Dec 30, 2019 05:18</td>
@@ -270,7 +272,7 @@ type DashboardFullProps = {
                           </tr>
                         </tbody>
                         <tbody>
-                          <tr className="border-b">
+                          <tr className="border-b text-left">
                             <td className="py-4">#96459761</td>
                             <td className="py-4 text-[#2DB224] font-semibold ">COMPLETED</td>
                             <td className="py-4">Dec 30, 2019 05:18</td>
@@ -283,7 +285,7 @@ type DashboardFullProps = {
                           </tr>
                         </tbody>
                         <tbody>
-                          <tr className="border-b">
+                          <tr className="border-b text-left">
                             <td className="py-4">#96459761</td>
                             <td className="py-4 text-[#EE5858] font-semibold ">CANCELED</td>
                             <td className="py-4">Dec 30, 2019 05:18</td>

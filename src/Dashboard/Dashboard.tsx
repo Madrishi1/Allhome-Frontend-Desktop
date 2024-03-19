@@ -132,18 +132,27 @@ type DashboardProps = {
                     </div>
                   <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
                         <div className=" flex flex-row border bg-card text-card-foreground shadow-sm col-span-1" data-v0-t="card">
+                        <svg className="w-8 h-8 text-gray-800 my-8 mx-8 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                            <path d="M18 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM7.648 9.636c.25 0 .498-.064.717-.186a1 1 0 1 1 .979 1.745 3.475 3.475 0 1 1 .185-5.955 1 1 0 1 1-1.082 1.681 1.475 1.475 0 1 0-.799 2.715Zm6.186 0c.252 0 .5-.063.72-.187a1 1 0 1 1 .974 1.746 3.475 3.475 0 1 1 .188-5.955 1 1 0 0 1-1.084 1.681 1.475 1.475 0 1 0-.8 2.715h.002Z"/>
+                        </svg>
                           <div className="flex flex-col space-y-1.5 p-6">
                             <h3 className="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight">234</h3>
                             <p className="text-sm text-muted-foreground">Stores</p>
                           </div>
                         </div>
-                        <div className=" border bg-card text-card-foreground shadow-sm col-span-1" data-v0-t="card">
+                        <div className=" flex flex-row border bg-card text-card-foreground shadow-sm col-span-1" data-v0-t="card">
+                        <svg className="w-8 h-8 text-gray-800 my-8 mx-8 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                            <path d="M18 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM7.648 9.636c.25 0 .498-.064.717-.186a1 1 0 1 1 .979 1.745 3.475 3.475 0 1 1 .185-5.955 1 1 0 1 1-1.082 1.681 1.475 1.475 0 1 0-.799 2.715Zm6.186 0c.252 0 .5-.063.72-.187a1 1 0 1 1 .974 1.746 3.475 3.475 0 1 1 .188-5.955 1 1 0 0 1-1.084 1.681 1.475 1.475 0 1 0-.8 2.715h.002Z"/>
+                        </svg>
                           <div className="flex flex-col space-y-1.5 p-6">
                             <h3 className="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight">149</h3>
                             <p className="text-sm text-muted-foreground">Orders</p>
                           </div>
                         </div>
-                        <div className="border bg-card text-card-foreground shadow-sm col-span-1" data-v0-t="card">
+                        <div className=" flex flex-row border bg-card text-card-foreground shadow-sm col-span-1" data-v0-t="card">
+                        <svg className="w-8 h-8 text-gray-800 my-8 mx-8 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                            <path d="M18 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM7.648 9.636c.25 0 .498-.064.717-.186a1 1 0 1 1 .979 1.745 3.475 3.475 0 1 1 .185-5.955 1 1 0 1 1-1.082 1.681 1.475 1.475 0 1 0-.799 2.715Zm6.186 0c.252 0 .5-.063.72-.187a1 1 0 1 1 .974 1.746 3.475 3.475 0 1 1 .188-5.955 1 1 0 0 1-1.084 1.681 1.475 1.475 0 1 0-.8 2.715h.002Z"/>
+                        </svg>
                           <div className="flex flex-col space-y-1.5 p-6">
                             <h3 className="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight">14</h3>
                             <p className="text-sm text-muted-foreground">Queries</p>
@@ -170,7 +179,7 @@ type DashboardProps = {
                           </tr>
                         </thead>
                         <tbody>
-                          <tr className="border-b">
+                          <tr className="text-left border-b">
                             <td className="py-4">#96459761</td>
                             <td className="py-4 text-[#FA8232] font-semibold ">IN PROCESS</td>
                             <td className="py-4">Dec 30, 2019 05:18</td>
@@ -183,7 +192,7 @@ type DashboardProps = {
                           </tr>
                         </tbody>
                         <tbody>
-                          <tr className="border-b">
+                          <tr className="text-left border-b">
                             <td className="py-4">#96459761</td>
                             <td className="py-4 text-[#2DB224] font-semibold ">COMPLETED</td>
                             <td className="py-4">Dec 30, 2019 05:18</td>
@@ -196,7 +205,7 @@ type DashboardProps = {
                           </tr>
                         </tbody>
                         <tbody>
-                          <tr className="border-b">
+                          <tr className=" text-left border-b">
                             <td className="py-4">#96459761</td>
                             <td className="py-4 text-[#EE5858] font-semibold ">CANCELED</td>
                             <td className="py-4">Dec 30, 2019 05:18</td>

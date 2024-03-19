@@ -12,8 +12,8 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
         <div className="min-h-screen bg-[#111111A1] text-white ">
           <Header title=''/>
           <main className="py-12">
-            <div className="max-w-4xl space-x-16 mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-            <div className='mt-8 '>
+            <div className="flex gap-8 px-8 items-start my-10">
+            <div className='mt-8 flex-auto px-20 w-1/2 mx-10 '>
                 <h2 className="text-4xl font-bold mb-6">Alhome - largest Home retail shop in the world.</h2>
                 <p className="mb-4">
                   Pellentesque ultrices, dui vel hendrerit iaculis, ipsum velit vestibulum risus, ac tincidunt diam lectus
@@ -47,10 +47,10 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
                   </li>
                 </ul>
               </div>
-              <div className=" bg-white rounded-lg shadow-lg p-6 mt-10">
+              <div className=" bg-white shadow-lg p-6 mt-10 flex-auto w-1/3 mx-20">
               <div dir="ltr" data-orientation="horizontal">
                 <div className="flex space-x-1 border-b">
-                  <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2 border-transparent hover:border-gray-300 focus:outline-none focus:border-blue-500">
+                  <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2 border-transparent hover:border-gray-300 focus:outline-none  focus:border-blue-500">
                   <Link to ="/">Sign in</Link>
                   </div>
                   <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2 border-transparent border-blue-500 focus:outline-none focus:border-blue-500">
@@ -103,7 +103,7 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
                         required
                       />
                     </div>
-                    <Link to ="/DashboardFull">
+                    <Link to ="/BusinessDetails">
                       <Button title="Process"/>
                     </Link>
                     <div>

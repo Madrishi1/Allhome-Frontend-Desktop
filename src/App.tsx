@@ -13,6 +13,7 @@ import { IntlProvider } from "react-intl";
 import messages_en from "./locales/en.json"
 import messages_ar from "./locales/arab.json" 
 import { useAppContext } from './utils/Context.js';
+import AdminLogin from './Desktop2/AdminLogin';
 
 
 
@@ -52,6 +53,8 @@ type AppProps = {
                 <Route path="/AdminDashboardDark" element={<AdminDashboardDark title='' />} />
                 <Route path="/BusinessDetails" element={<BusinessDetails title='' />} />
                 <Route path="/Sidebar" element={<Sidebar title='' />} />
+                <Route path="/AdminLogin" element={<AdminLogin title='' />} />
+
 
                 </Route>
             </Routes>
