@@ -13,7 +13,7 @@ type DashboardProps = {
               <div className=" py-4 px-8  border-b bg-[#F2F4F5]">
                   <h1 className="text-xl font-semibold">Dashboard</h1>
               </div>
-              <div className="flex">
+              <div className="flex flex-col md:flex-row">
                 <aside className=" bg-white h-1/2 p-6 border-r shadow-lg">
                   <nav className="space-y-1">
                     <a href="#" className="flex items-center text-white bg-[#0F30A5] p-2 ">

@@ -13,8 +13,8 @@ type BusinessDetailsProps = {
         <div>
           <Header title={""} />
 
-        <div className="flex justify-center py-12 bg-[#111111A1]">
-                    <div className="bg-white p-8  shadow-md w-full max-w-2xl">
+        <div className="min-h-screen flex justify-center items-center p-4 bg-[#111111A1]">
+                    <div className="bg-white p-8  shadow-md max-w-md w-full">
                         <h1 className="text-2xl font-semibold mb-4">Business Details</h1>
                         <div className="grid grid-cols-2 gap-4">
                         

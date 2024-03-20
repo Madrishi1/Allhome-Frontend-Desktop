@@ -12,8 +12,8 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
         <div className="min-h-screen bg-[#111111A1] text-white ">
           <Header title=''/>
           <main className="py-12">
-            <div className="flex gap-8 px-8 items-start my-10">
-            <div className='mt-8 flex-auto px-20 w-1/2 mx-10 '>
+            <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12 ">
+            <div className='max-w-md p-2'>
                 <h2 className="text-4xl font-bold mb-6">Alhome - largest Home retail shop in the world.</h2>
                 <p className="mb-4">
                   Pellentesque ultrices, dui vel hendrerit iaculis, ipsum velit vestibulum risus, ac tincidunt diam lectus
@@ -47,7 +47,7 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
                   </li>
                 </ul>
               </div>
-              <div className=" bg-white shadow-lg p-6 mt-10 flex-auto w-1/3 mx-20">
+              <div className=" bg-white shadow-lg p-6 mt-10 flex-auto w-full max-w-xs">
               <div dir="ltr" data-orientation="horizontal">
                 <div className="flex space-x-1 border-b">
                   <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2 border-transparent hover:border-gray-300 focus:outline-none  focus:border-blue-500">

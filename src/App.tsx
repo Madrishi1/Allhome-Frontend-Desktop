@@ -54,6 +54,7 @@ type AppProps = {
                 <Route path="/BusinessDetails" element={<BusinessDetails title='' />} />
                 <Route path="/Sidebar" element={<Sidebar title='' />} />
                 <Route path="/AdminLogin" element={<AdminLogin title='' />} />
+                
 
 
                 </Route>

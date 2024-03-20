@@ -13,7 +13,7 @@ type DashboardFullProps = {
               <div className=" py-4 px-8  border-b bg-[#F2F4F5]">
                   <h1 className="text-xl font-semibold">Dashboard</h1>
               </div>
-              <div className="flex">
+              <div className="flex flex-col md:flex-row">
                 <aside className=" bg-white h-1/2 p-6 border-r shadow-lg">
                   <nav className="space-y-1">
                     <a href="#" className="flex items-center text-white bg-[#0F30A5] p-2 ">
@@ -119,7 +119,7 @@ type DashboardFullProps = {
                     </a>
                   </nav>
                 </aside>
-                <main className="flex-1 p-6 bg-white">
+                <main className="flex-1  p-6 bg-white">
                   <div className="  mb-6">
                     <div>
                       <h2 className="text-sm font-bold mb-1">Hello, Admin</h2>
@@ -130,7 +130,7 @@ type DashboardFullProps = {
                         <p>AI more</p>
                       </p>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 my-6">
+                    <div className="grid md:grid-cols-3 gap-4 my-6">
                       <div className=" border bg-card text-card-foreground shadow-sm col-span-1" data-v0-t="card">
                         <div className="flex flex-col space-y-1.5 p-6 shadow-sm">
                           <h3 className="font-bold whitespace-nowrap leading-none tracking-tight text-l">Account Info </h3>

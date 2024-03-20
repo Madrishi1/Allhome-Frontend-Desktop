@@ -10,19 +10,16 @@ type AdminDashboardProps = {
     return (
         <div className="">
             <AdminHeader title=""/>
-            <div className="flex bg-gray-100 ">
+            <div className="md:flex bg-gray-100 ">
                 <div className="flex-1  p-4 rounded-lg ">
-                <div className="flex justify-between items-center mb-6">
+                <div className=" justify-between items-center mb-6">
                     <h1 className="text-xl font-semibold">Overview</h1>
                 </div>
-                
-                <div className="grid grid-cols-4  gap-4 mb-6">
-                    
+                <div className="grid md:grid-cols-4  gap-4 mb-6">
                     <div
                     className="border text-card-foreground shadow-sm bg-blue-100 p-4 rounded-lg flex items-center"
                     data-v0-t="card"
                     >
-                    
                     <div>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -206,8 +203,8 @@ type AdminDashboardProps = {
                         </tbody>
                         </table>
                     </div>
-                    <div className='flex flex-row space-x-4'>
-                        <div className="relative w-2/3 overflow-auto bg-white p-4 rounded-2xl  ">
+                    <div className='flex flex-col md:flex-row space-x-4'>
+                        <div className="relative md:w-2/3 overflow-auto bg-white p-4 rounded-2xl  ">
                         <h2 className="text-base font-semibold mb-4 ">Active Orders</h2>
                             <table className="w-full caption-bottom text-sm">
                             <thead className="[&amp;_tr]:border-b bg-[#F2F4F5]">
@@ -249,7 +246,7 @@ type AdminDashboardProps = {
                             </table>
                         </div>
 
-                        <div className="relative w-1/3 overflow-auto bg-white p-4 rounded-2xl">
+                        <div className="relative md:w-1/3 overflow-auto bg-white p-4 rounded-2xl">
                             <h2 className="text-base font-semibold mb-4">Most Bought Products</h2>
                             <table className="w-full caption-bottom text-sm">
                             <thead className="[&amp;_tr]:border-b bg-[#F2F4F5]">
@@ -281,14 +278,13 @@ type AdminDashboardProps = {
                             </table>
                         </div> 
                     </div>
-
                     </div>
                     <div>
                     
                     </div>
                 </div>
                 </div>
-                <div className=" bg-card text-card-foreground shadow-sm bg-white" data-v0-t="card">
+                <div className=" bg-card text-card-foreground shadow-sm bg-white">
                     <div className="flex flex-col space-y-1.5 p-6">
                     <h3 className="text-sm font-bold ">Activities</h3>
                     </div>

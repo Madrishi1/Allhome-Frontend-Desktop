@@ -15,8 +15,8 @@ const Login: React.FC<LoginProps> = ({ title }) => {
           <Header title={""} />
           
           <main className="py-12 ">
-            <div className="flex gap-8 px-8 items-start my-10">
-              <div className='mt-8 flex-auto px-20 w-1/2 mx-10'>
+            <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12 ">
+              <div className='max-w-md p-2'>
                 <h2 className="text-4xl font-bold mb-6"><FormattedMessage id="app.desLargeFont"/></h2>
                 <p className="mb-4">
                   <FormattedMessage id="app.desSmallFont"/>
@@ -48,7 +48,7 @@ const Login: React.FC<LoginProps> = ({ title }) => {
                   </li>
                 </ul>
               </div>
-              <div className=" bg-white shadow-lg p-6 mt-10 flex-auto w-1/3 mx-20">
+              <div className=" bg-white shadow-lg p-6 mt-10 flex-auto w-full max-w-xs">
               <div dir="ltr" >
                 <div className="flex space-x-1 border-b">
                   <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2 border-transparent border-blue-500 focus:outline-none focus:border-blue-500">
