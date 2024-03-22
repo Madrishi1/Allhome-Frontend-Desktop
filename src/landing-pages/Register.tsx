@@ -1,7 +1,9 @@
 import React from 'react';
-import Button from '../Button';
+import Button from '../Components/Button';
 import { Link } from 'react-router-dom';
-import Header from '../Header';
+import Header from '../Components/Header';
+import Password from '../Components/Password';
+import PhoneNumber from '../Components/PhoneNumber';
 
 type RegisterProps = {
   title: string;
@@ -12,7 +14,7 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
         <div className="min-h-screen bg-[#111111A1] text-white ">
           <Header title=''/>
           <main className="py-12">
-            <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12 ">
+            <div className="flex flex-col md:flex-row items-center justify-around space-y-8 md:space-y-0 md:space-x-12 ">
             <div className='max-w-md p-2'>
                 <h2 className="text-4xl font-bold mb-6">Alhome - largest Home retail shop in the world.</h2>
                 <p className="mb-4">
@@ -53,13 +55,13 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
                   <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2 border-transparent hover:border-gray-300 focus:outline-none  focus:border-blue-500">
                   <Link to ="/">Sign in</Link>
                   </div>
-                  <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2 border-transparent border-blue-500 focus:outline-none focus:border-blue-500">
+                  <div className="w-full py-2.5 text-center font-medium text-gray-600 border-b-2  border-blue-500 focus:outline-none focus:border-blue-500">
                     Register
                   </div>
                 </div>
                 <div>
                   <div>
-                    <form className="space-y-4 mt-4">
+                    <form className="space-y-3 mt-4">
                     <div className="flex flex-col">
                       <span className='text-sm mb-2 font-bold text-[#323031]'>Name</span>
                       <input
@@ -78,34 +80,26 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
                     </div>
                     <div className="flex flex-col">
                       <span className='text-sm mb-2 font-bold text-[#323031]'>Phone Number</span>
-                      <input
-                        type="text"
-                        className=" h-10 w-full rounded-md border border-input bg-background px-4 text-black text-sm  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        required
-                      />
+                      <PhoneNumber title=""/>
                     </div>
 
 
                     <div className="flex flex-col">
                       <span className='text-sm mb-2 font-bold mt- text-[#323031]'>Password</span>
-                      <input
-                        type="password"
-                        className=" h-10 w-full  rounded-md border border-input bg-background px-4 text-black text-sm  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        placeholder="8+ Charecter"
-                        required
-                      />
+                      <Password title=""/>
+
                     </div>
                     <div className="flex flex-col">
                       <span className='text-sm mb-2 font-bold mt- text-[#323031]'>Confirm Password</span>
-                      <input
-                        type="password"
-                        className=" h-10 w-full text-black rounded-md border border-input bg-background px-4 text-sm  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"                        
-                        required
-                      />
+                      <Password title=""/>
+                      
                     </div>
-                    <Link to ="/BusinessDetails">
-                      <Button title="Process"/>
-                    </Link>
+                    <div>
+                      <Link to ="/BusinessDetails">
+                        <Button title="Process" />
+                      </Link>
+                    </div>
+                    
                     <div>
                     <label htmlFor="terms" className="mt-2 text-sm text-gray-600">
                     <input

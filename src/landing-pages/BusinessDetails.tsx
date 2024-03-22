@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../Button';
+import Button from '../Components/Button';
 import { FormattedMessage } from "react-intl";
-import Header from '../Header';
+import Header from '../Components/Header';
 import { Link } from 'react-router-dom';
 
 type BusinessDetailsProps = {
